@@ -2,5 +2,4 @@
 import sys
 import fib
 
-
-print Fib_recursion(10)
+print fib.Fib_recursion(10)
