@@ -2,4 +2,6 @@
 import sys
 import fib
 
-print fib.Fib_recursion(10)
+# Get input from user
+number = input("Here you go Input Please  : ")
+print fib.Fib_recursion(number)
