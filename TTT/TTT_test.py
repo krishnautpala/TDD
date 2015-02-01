@@ -2,12 +2,15 @@
 import sys
 import TTT
 
-#print "hello"
+#User 1
+Player_1 = TTT.createUser()
 
+#User 2
+Player_2 = TTT.createUser()
 
 print TTT.displayBoard()
 print TTT.isDraw()
-print TTT.isWinner("Player1")
-print TTT.insertPiece("0")
+print TTT.isWinner(Player_1)
+print TTT.insertPiece("O")
 print TTT.clearBoard()
 
