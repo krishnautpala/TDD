@@ -48,17 +48,27 @@ while True:
 
     # Displays the board
     if (choice == 2):
-    	print TTT.displayBoard()
+        TTT.displayBoard()
 
     # Checks if the match is drawn
     if (choice == 4):
-    	print TTT.isDraw()
-	
+    	is_draw = TTT.isDraw()
+        if (is_draw == 1):
+           print "Match Drawn."
+           break
 
     # Checks if Player won the game
     if (choice == 3):
-    	print TTT.isWinner(Player_1)
-	
+
+    	is_won = TTT.isWinner("O")
+        if (is_won == 1):
+            print Player_1+" won the game."
+            break
+
+  	is_won = TTT.isWinner("X")
+        if (is_won == 1):
+            print Player_2+" won the game."
+            break
 
     # Inserts Piece
     if (choice == 1):
@@ -69,16 +79,27 @@ while True:
 
        # Set Player's turn
        if ( turn == 0):
-          TTT.insertPiece("X",location)
+          TTT.insertPiece("O",location)
           turn = 1
        else:
           turn = 0
-	  TTT.insertPiece("Y",location)
+	  TTT.insertPiece("X",location)
        
+       is_won = TTT.isWinner("O")
+       if (is_won == 1):
+            print Player_1+" won the game."
+            break
+
+       is_won = TTT.isWinner("X")
+       if (is_won == 1):
+            print Player_2+" won the game."
+            break
+
        #display new board post insert
-       print TTT.displayBoard()
+       TTT.displayBoard()
        
 	
     # Clears Board
     if (choice == 5):
     	print TTT.clearBoard()	
+        break
