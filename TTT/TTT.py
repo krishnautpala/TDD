@@ -5,6 +5,7 @@ import sys
 global table
 table = [ [ 0 for i in range(3) ] for j in range(3) ]
 
+
 # Displays current board
 def displayBoard():
     print table
@@ -23,7 +24,7 @@ def isDraw():
     isPlayer2_won = isWinner(Player)
     # If both have complete return match drawn
     if  isPlayer1_won == '0' and isPlayer2_won == '0':
-	return 0
+	return "Match Drawn"
 
     return 1
 
@@ -73,7 +74,38 @@ def isWinner(Player):
     return 0
 
 # Inserts  a piece
-def insertPiece(Piece):
+def insertPiece(Piece,location):
+
+    # Insert the piece onto location
+    global table
+    if ( location == 1 ):
+	if (table[0][0] == "0"):
+	    table[0][0] = Piece
+    if ( location == 2 ):
+	if (table[0][1] == "0"):
+	    table[0][1] = Piece
+    if ( location == 3 ):
+	if (table[0][2] == "0"):
+	    table[0][2] = Piece
+    if ( location == 4 ):
+	if (table[1][0] == "0"):
+	    table[1][0] = Piece
+    if ( location == 5 ):
+	if (table[1][1] == "0"):
+	    table[1][1] = Piece
+    if ( location == 6 ):
+	if (table[1][2] == "0"):
+	    table[1][2] = Piece
+    if ( location == 7 ):
+	if (table[2][0] == "0"):
+	    table[2][0] = Piece
+    if ( location == 8 ):
+	if (table[2][1] == "0"):
+	    table[2][1] = Piece
+    if ( location == 9 ):
+	if (table[2][2] == "0"):
+	    table[2][2] = Piece
+
     return 0
 
 # Clear the board
@@ -86,4 +118,7 @@ def clearBoard():
 def createUser():
     Player_Name = raw_input ("Please Enter you name: ")
     return Player_Name
+
+
+
 
