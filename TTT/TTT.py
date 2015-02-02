@@ -8,8 +8,8 @@ table = [ [ 0 for i in range(3) ] for j in range(3) ]
 
 # Displays current board
 def displayBoard():
-    print table
-    return 0
+    pass
+    return table
 
 # Checks if the match is drawn
 def isDraw():    
