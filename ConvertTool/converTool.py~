@@ -15,7 +15,7 @@ def lt_to_gal(litre):
     return output_gal
 
 def gal_to_lt(gal):
-    output_lt = gal*3.78541
+    output_lt = litre*3.78541
     return output_lt
 
 def km_to_mi(k_meter):

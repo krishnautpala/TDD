@@ -4,3 +4,4 @@ This is very small program I wanted to test implementing TDD. Originally I was t
 But starting with test cases I was able to finish this program in 10 min including all testing.
 Using TDD I was able to assume all possible test cases before even starting code which is very good since all exceptions will be covered.
 
+Write a brief, informal summary of your experience with TDD. What are your impressions of TDD? Do you like the approach? Do you dislike it? What issues did you find with using TDD. Would you use TDD in your development workflow?
