@@ -2,12 +2,12 @@
 import sys
 import converTool
 
-pounds = 0
-kg = 0
-litre = 0
+pounds = 20
+kg = 9.071
+litre = 20
 gal = 0
-k_meter = 0
-mile = 0
+k_meter = 5
+mile = 3.11
 
 
 print converTool.lb_to_kg(pounds)
